@@ -1,0 +1,33 @@
+:root {
+    --rojo: #f7374e;
+    --vino: #88304d;
+    --morado: #522546;
+    --gris: #2c2c2c;
+    --blanco: #ffffff;
+  }
+
+  body {
+    background-color: var(--gris);
+    color: var(--blanco);
+  }
+
+   /* Fondo animado */
+   .background-animation {
+    background: linear-gradient(-45deg, var(--rojo), var(--vino), var(--morado), var(--gris));
+    background-size: 400% 400%;
+    animation: moveGradient 15s ease infinite;
+    min-height: 100vh;
+    padding-top: 80px; /* Compensa el navbar fijo */
+    padding-bottom: 40px;
+  }
+
+  @keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+
+
+
+  

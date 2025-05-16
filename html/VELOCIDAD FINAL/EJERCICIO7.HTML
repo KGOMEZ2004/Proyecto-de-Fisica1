@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidad Final de un Objeto</title>
+    <link rel="stylesheet" href="/css/VELOCIDAD FINAL/EJERCICIO7.CSS">
+</head>
+<body>
+    <div class="main-content">
+        <h1>7. Velocidad Final de un Objeto</h1>
+        <p>Un objeto parte de 5 m/s y acelera uniformemente a 2 m/s² durante 4 s. ¿Cuál es su velocidad final?</p>
+
+        <div class="exercise">
+            <form id="exerciseForm">
+                <div class="form-group">
+                    <label for="initialVelocity">Velocidad Inicial (m/s):</label>
+                    <input type="number" id="initialVelocity" name="initialVelocity" value="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="acceleration">Aceleración (m/s²):</label>
+                    <input type="number" id="acceleration" name="acceleration" value="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Tiempo (s):</label>
+                    <input type="number" id="time" name="time" value="4" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+            <div class="result" id="result"></div>
+            <div class="formula" id="formula">
+                <h2>Fórmula Utilizada</h2>
+                <p>Velocidad Final = Velocidad Inicial + (Aceleración * Tiempo)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conversion-container">
+        <div class="conversion-header">
+            <h2>Conversiones</h2>
+        </div>
+        <div class="conversion-form">
+            <div class="form-group">
+                <label for="conversionType">Tipo de Conversión:</label>
+                <select id="conversionType">
+                    <option value="mToKm">Metros a Kilómetros</option>
+                    <option value="kmToM">Kilómetros a Metros</option>
+                    <option value="sToMin">Segundos a Minutos</option>
+                    <option value="minToS">Minutos a Segundos</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="conversionValue">Valor a Convertir:</label>
+                <input type="number" id="conversionValue" placeholder="Ingrese el valor">
+                <button onclick="performConversion()">Convertir</button>
+                <p id="conversionResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/VELOCIDAD FINAL/EJERCICIO7.JS"></script>
+</body>
+</html>

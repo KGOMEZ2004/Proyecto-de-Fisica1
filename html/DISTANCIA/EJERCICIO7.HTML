@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Distancia Recorrida y Conversiones</title>
+    <link rel="stylesheet" href="/css/DISTANCIA/EJERCICIO7.CSS">
+</head>
+<body>
+    <div class="main-content">
+        <h1>Cálculo de Distancia Recorrida</h1>
+        <h3>Bicicleta con tramos distintos</h3>
+        <p>Un ciclista viaja 10 km hacia el norte en 30 minutos, luego 6 km al este en 20 minutos. ¿Cuál es la distancia total recorrida?</p>
+
+        <div class="exercise">
+            <form id="exerciseForm">
+                <div class="form-group">
+                    <label for="distanceNorth">Distancia hacia el norte (km):</label>
+                    <input type="number" id="distanceNorth" name="distanceNorth" value="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="distanceEast">Distancia hacia el este (km):</label>
+                    <input type="number" id="distanceEast" name="distanceEast" value="6" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+
+    <div class="conversion-container">
+        <div class="conversion-header">
+            <h2>Conversiones</h2>
+        </div>
+        <div class="conversion-form">
+            <div class="form-group">
+                <label for="conversionType">Tipo de Conversión:</label>
+                <select id="conversionType">
+                    <option value="kmToM">Kilómetros a Metros</option>
+                    <option value="mToKm">Metros a Kilómetros</option>
+                    <option value="minutesToHours">Minutos a Horas</option>
+                    <option value="hoursToMinutes">Horas a Minutos</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="conversionValue">Valor a Convertir:</label>
+                <input type="number" id="conversionValue" placeholder="Ingrese el valor">
+                <button onclick="performConversion()">Convertir</button>
+                <p id="conversionResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/DISTANCIA/EJERCICIO7.JS"></script>
+</body>
+</html>

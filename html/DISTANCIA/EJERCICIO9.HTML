@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Distancia Recorrida en Maratón y Conversiones</title>
+    <link rel="stylesheet" href="/css/DISTANCIA/EJERCICIO9.CSS">
+</head>
+<body>
+    <div class="main-content">
+        <h1>Cálculo de Distancia Recorrida en Maratón</h1>
+        <p>Un atleta corre una maratón de 42.195 km. Corre los primeros 10 km en 1 h, los siguientes 20 km en 1.5 h, y el resto en 50 minutos. ¿Qué distancia total recorre? ¿Y qué representa cada tramo?</p>
+
+        <div class="exercise">
+            <form id="exerciseForm">
+                <div class="form-group">
+                    <label for="distance1">Distancia del primer tramo (km):</label>
+                    <input type="number" id="distance1" name="distance1" value="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="time1">Tiempo del primer tramo (horas):</label>
+                    <input type="number" id="time1" name="time1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="distance2">Distancia del segundo tramo (km):</label>
+                    <input type="number" id="distance2" name="distance2" value="20" required>
+                </div>
+                <div class="form-group">
+                    <label for="time2">Tiempo del segundo tramo (horas):</label>
+                    <input type="number" id="time2" name="time2" value="1.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="time3">Tiempo del tercer tramo (minutos):</label>
+                    <input type="number" id="time3" name="time3" value="50" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+            <div class="result" id="result"></div>
+            <div class="formula" id="formula">
+                <h2>Fórmula Utilizada</h2>
+                <p>Distancia total = Distancia del primer tramo + Distancia del segundo tramo + Distancia del tercer tramo</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conversion-container">
+        <div class="conversion-header">
+            <h2>Conversiones</h2>
+        </div>
+        <div class="conversion-form">
+            <div class="form-group">
+                <label for="conversionType">Tipo de Conversión:</label>
+                <select id="conversionType">
+                    <option value="kmToM">Kilómetros a Metros</option>
+                    <option value="mToKm">Metros a Kilómetros</option>
+                    <option value="hoursToMinutes">Horas a Minutos</option>
+                    <option value="minutesToHours">Minutos a Horas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="conversionValue">Valor a Convertir:</label>
+                <input type="number" id="conversionValue" placeholder="Ingrese el valor">
+                <button onclick="performConversion()">Convertir</button>
+                <p id="conversionResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/DISTANCIA/EJERCICIO9.JS"></script>
+</body>
+</html>

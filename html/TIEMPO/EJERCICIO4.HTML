@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Tiempo de Aceleración y Conversiones</title>
+    <link rel="stylesheet" href="/css/TIEMPO/EJERCICIO4.CSS">
+</head>
+<body>
+    <div class="main-content">
+        <h1>Cálculo de Tiempo de Aceleración</h1>
+        <p>Una motocicleta parte del reposo y acelera uniformemente a razón de 2 m/s². ¿Cuánto tiempo tarda en alcanzar una velocidad de 36 km/h?</p>
+
+        <div class="exercise">
+            <form id="exerciseForm">
+                <div class="form-group">
+                    <label for="finalVelocity">Velocidad final (km/h):</label>
+                    <input type="number" id="finalVelocity" name="finalVelocity" value="36" required>
+                </div>
+                <div class="form-group">
+                    <label for="acceleration">Aceleración (m/s²):</label>
+                    <input type="number" id="acceleration" name="acceleration" value="2" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+            <div class="result" id="result"></div>
+            <div class="formula" id="formula">
+                <h2>Fórmula Utilizada</h2>
+                <p>Tiempo = Velocidad final / Aceleración</p>
+                <p>Donde la velocidad final debe estar en m/s</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conversion-container">
+        <div class="conversion-header">
+            <h2>Conversiones</h2>
+        </div>
+        <div class="conversion-form">
+            <div class="form-group">
+                <label for="conversionType">Tipo de Conversión:</label>
+                <select id="conversionType">
+                    <option value="kmhToMs">Km/h a m/s</option>
+                    <option value="msToKmh">m/s a Km/h</option>
+                    <option value="sToMin">Segundos a Minutos</option>
+                    <option value="minToS">Minutos a Segundos</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="conversionValue">Valor a Convertir:</label>
+                <input type="number" id="conversionValue" placeholder="Ingrese el valor">
+                <button onclick="performConversion()">Convertir</button>
+                <p id="conversionResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/TIEMPO/EJERCICIO4.JS"></script>
+</body>
+</html>

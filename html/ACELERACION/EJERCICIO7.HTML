@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidad Final con Datos de Distancia y Aceleración</title>
+    <link rel="stylesheet" href="/css/ACELERACION/EJERCICIO7.CSS">
+</head>
+<body>
+    <div class="main-content">
+        <h1>7. Velocidad Final con Datos de Distancia y Aceleración</h1>
+        <p>Un cuerpo parte del reposo, recorre 18 m con aceleración de 3 m/s². ¿Cuál es su velocidad final?</p>
+
+        <div class="exercise">
+            <form id="exerciseForm">
+                <div class="form-group">
+                    <label for="distance">Distancia (metros):</label>
+                    <input type="number" id="distance" name="distance" value="18" required>
+                </div>
+                <div class="form-group">
+                    <label for="acceleration">Aceleración (m/s²):</label>
+                    <input type="number" id="acceleration" name="acceleration" value="3" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+            <div class="result" id="result"></div>
+            <div class="formula" id="formula">
+                <h2>Fórmula Utilizada</h2>
+                <p>Velocidad Final = sqrt(2 * Aceleración * Distancia)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conversion-container">
+        <div class="conversion-header">
+            <h2>Conversiones</h2>
+        </div>
+        <div class="conversion-form">
+            <div class="form-group">
+                <label for="conversionType">Tipo de Conversión:</label>
+                <select id="conversionType">
+                    <option value="mToKm">Metros a Kilómetros</option>
+                    <option value="kmToM">Kilómetros a Metros</option>
+                    <option value="sToMin">Segundos a Minutos</option>
+                    <option value="minToS">Minutos a Segundos</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="conversionValue">Valor a Convertir:</label>
+                <input type="number" id="conversionValue" placeholder="Ingrese el valor">
+                <button onclick="performConversion()">Convertir</button>
+                <p id="conversionResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/ACELERACION/EJERCICIO7.JS"></script>
+</body>
+</html>

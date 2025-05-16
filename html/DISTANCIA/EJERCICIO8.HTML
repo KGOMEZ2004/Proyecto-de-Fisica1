@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Distancia de Frenado y Animación</title>
+    <link rel="stylesheet" href="/css/DISTANCIA/EJERCICIO8.CSS">
+</head>
+<body>
+    <div class="main-content">
+        <h1>Cálculo de Distancia de Frenado</h1>
+        <p>Un vehículo viaja a 90 km/h y aplica los frenos con una desaceleración constante de 5 m/s². ¿A qué distancia se detendrá completamente?</p>
+
+        <div class="exercise">
+            <form id="exerciseForm">
+                <div class="form-group">
+                    <label for="initialVelocity">Velocidad inicial (km/h):</label>
+                    <input type="number" id="initialVelocity" name="initialVelocity" value="90" required>
+                </div>
+                <div class="form-group">
+                    <label for="deceleration">Desaceleración (m/s²):</label>
+                    <input type="number" id="deceleration" name="deceleration" value="5" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+            <div class="result" id="result"></div>
+            <div class="formula" id="formula">
+                <h2>Fórmula Utilizada</h2>
+                <p>Distancia de frenado = (Velocidad inicial²) / (2 * Desaceleración)</p>
+            </div>
+        </div>
+    </div>
+    <div class="conversion-container">
+        <div class="conversion-header">
+            <h2>Conversiones</h2>
+        </div>
+        <div class="conversion-form">
+            <div class="form-group">
+                <label for="conversionType">Tipo de Conversión:</label>
+                <select id="conversionType">
+                    <option value="kmToM">Kilómetros a Metros</option>
+                    <option value="mToKm">Metros a Kilómetros</option>
+                    <option value="kmhToMs">Km/h a m/s</option>
+                    <option value="msToKmh">m/s a Km/h</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="conversionValue">Valor a Convertir:</label>
+                <input type="number" id="conversionValue" placeholder="Ingrese el valor">
+                <button onclick="performConversion()">Convertir</button>
+                <p id="conversionResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/DISTANCIA/EJERCICIO8.JS"></script>
+</body>
+</html>
